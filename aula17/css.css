@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background : linear-gradient(black, gray);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    width: 55%;
+    background-color:  #25D366;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+
+}
+ 
+.coluna2 {
+    width: 55%;
+    background-color:  #3b5998;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.coluna3 {
+    width: 55%;
+    background : linear-gradient( #f9ce34,  #ee2a7b,  #6228d7) ;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.coluna4 {
+    width: 55%;
+    background : linear-gradient( red, rgb(0, 0, 0)) ;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.coluna5 {
+    width: 55%;
+    background : linear-gradient( #00fff2, #ee2a7b) ;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+
+.coluna6 {
+    width: 55%;
+    background : linear-gradient( #000000, #646062) ;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+    .coluna {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .coluna p, h1{
+        width: 110%;
+        p {
+            font-size: 10px; /* Defina o tamanho da fonte desejado */
+        }
+        
+        h1 {
+            font-size: 20px; /* Defina o tamanho da fonte desejado */
+        }
+        
+        h2 {
+            font-size: 20px; /* Defina o tamanho da fonte desejado */
+        }
+        
+        h3 {
+            font-size: 18px; /* Defina o tamanho da fonte desejado */
+        }
+    }
+}
+
+img {
+    width: 25px;
+    right: 25px;
+
+}
+h1 {
+    display: inline-block; /* Permite que o h1 fique na mesma linha que a imagem */
+  }
+
+.face {
+
+    width: 25px;
+    right: 25px;
+
+}
+
+.coluna:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  } 
+
+  .coluna2:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  }
+
+  .coluna3:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  }
+
+  .coluna4:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  }
+
+  .coluna5:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  }
+
+  .coluna6:hover {
+    border-color: #333; /* Cor da borda quando o mouse passa sobre o contêiner */
+    transform: scale(1.05); /* Efeito de zoom quando o mouse passa sobre o contêiner */
+  }
+
+
+p, h1, h2, h3 {
+Color: white
+ 
+}
+
+
+
+.info    {
+    display:none; /* Inicialmente oculta a janela de informações */
+    position: flex;
+    top: 0;
+    background-color: rgba(37, 211, 102, 1) ; /* Cor de fundo com transparência */
+    color: white;    
+    padding: 50px;
+    width: 410px; /* Defina a largura da sua janela de informações */
+    border-radius: 20px;
+    margin: 8px;
+    justify-content: flex-end; /* Alinha a caixa à direita */
+
+  }
+  
+
+
+  .coluna:hover + .info {
+    display: block; /* Mostra a janela de informações quando o mouse passa sobre a foto */
+    left: 100%; /* Isso fará a janela aparecer ao lado da foto */
+    
+  } 
+ 
+  .info2 {
+    display:none; /* Inicialmente oculta a janela de informações */
+    position: flex;
+    top: 0;
+    background-color: rgba(59, 89, 152, 1); /* Cor de fundo com transparência */
+    color: white;    
+    padding: 50px;
+    width: 410px; /* Defina a largura da sua janela de informações */
+    border-radius: 20px;
+    margin: 8px;
+  }
+  .coluna2:hover + .info2 {
+    display: block; /* Mostra a janela de informações quando o mouse passa sobre a foto */
+    left: 100%; /* Isso fará a janela aparecer ao lado da foto */
+  } 
+
+  .info3 {
+    display:none; /* Inicialmente oculta a janela de informações */
+    position: flex;
+    top: 0;
+    background : linear-gradient( #f9ce34,  #ee2a7b,  #6228d7) ; /* Cor de fundo com transparência */
+    color: white;    
+    padding: 50px;
+    width: 410px; /* Defina a largura da sua janela de informações */
+    border-radius: 20px;
+    margin: 8px;
+  }
+  .coluna3:hover + .info3 {
+    display: block; /* Mostra a janela de informações quando o mouse passa sobre a foto */
+    left: 100%; /* Isso fará a janela aparecer ao lado da foto */
+  } 
+  .insta {
+
+    width: 40px;
+    right: 40px;
+
+}
+.gf {
+
+    width: 500px;
+    
+}
+
+.tt {   
+    width: 60px;
+    right: 60px;
+
+}
+
+@keyframes expandText {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.animated-text {
+    animation: expandText 3s forwards;
+}

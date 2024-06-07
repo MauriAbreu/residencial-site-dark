@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para a div container */
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #99cccc;
+    text-align: center;
+    color: whitesmoke
+
+}
+
+/* Estilo para o formulário */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #99cccc;
+    color: whitesmoke
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #017f12;
+    color: #fff;
+    border: 1px solid rgb(50, 255, 101);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #07b13a;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+body {
+background-color: black;
+}
+p {color:rgba(180, 179, 179, 0.34)}
